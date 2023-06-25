@@ -1,3 +1,4 @@
+
 # TaskBuddy
 
 TaskBuddy is a task management tool that helps individuals and teams organize, track, and prioritize tasks and projects. It provides a user-friendly interface to efficiently manage your tasks and stay productive.
@@ -15,13 +16,56 @@ TaskBuddy is a task management tool that helps individuals and teams organize, t
 ## Installation
 
 1. Clone the repository:
-   ```shell
+   
    git clone https://github.com/vishwanathdas/taskbuddy.git
-Install the dependencies:
+   
+2.Install the dependencies:
 
-    ```shell
-    pip install django
+    
+    pip install -r requirements.txt
+    
+asgiref==3.5.2
+attrs==22.1.0
+backports.zoneinfo==0.2.1
+black==22.6.0
+click==8.1.3
+coverage==6.4.3
+Django==4.0.5
+factory-boy==3.2.1
+Faker==13.15.1
+flake8==5.0.4
+iniconfig==1.1.1
+mccabe==0.7.0
+mypy-extensions==0.4.3
+packaging==21.3
+pathspec==0.9.0
+platformdirs==2.5.2
+pluggy==1.0.0
+py==1.11.0
+pycodestyle==2.9.1
+pyflakes==2.5.0
+pyparsing==3.0.9
+pytest==7.1.2
+pytest-django==4.5.2
+python-dateutil==2.8.2
+pytz==2022.1
+six==1.16.0
+sqlparse==0.4.2
+tomli==2.0.1
+typing-extensions==4.3.0
+uWSGI==2.0.18,<2.1
 
+3.Migration & Migrate Application:
+
+    
+    python manage.py makemigrations
+    python manage.py migrate
+
+4.Run Application:
+
+    
+    python manage.py runserver
+    
  ## Configure the environment:
 
 Copy the .env.example file and rename it to .env.
